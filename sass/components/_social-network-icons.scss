@@ -21,7 +21,14 @@
     color: $color-social-network-icon;
 
     transition: color $duration $timing-function,
-        background-color $duration $timing-function;
+    background-color $duration $timing-function;
+
+    &:hover,
+    &:focus {
+        color: $color-secondary-accent;
+        
+        background-color: $color-accent;
+    }
 }
 
 .icons-list__link--secondary {
@@ -30,18 +37,11 @@
     background-color: $color-icon-bg;
 
     transition: background-color $duration $timing-function;
-}
 
-.icons-list__link--primary:hover,
-.icons-list__link--primary:focus {
-    color: $color-secondary-accent;
-
-    background-color: $color-accent;
-}
-
-.icons-list__link--secondary:hover,
-.icons-list__link--secondary:focus {
-    background-color: $color-accent;
+    &:hover,
+    &:focus {
+        background-color: $color-accent;
+    }
 }
 
 .icons-list__icon {
